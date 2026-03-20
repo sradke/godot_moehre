@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.3")
 
 GameState="*res://autoload/GameState.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
