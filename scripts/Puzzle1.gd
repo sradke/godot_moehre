@@ -24,11 +24,11 @@ func _check(text: String) -> void:
 			1:
 				$UI/Feedback.text = "Nicht ganz. Benutze deine Fata..."
 			2:
-				$UI/Feedback.text += "\nTipp 1: Orange Wurzel → Möhre. Davon brauchen wir 'Möhr'"
+				$UI/Feedback.text += "\nTipp 1: Orange Wurzel -> Möhre. Davon brauchen wir 'Möhr'"
 			3:
 				$UI/Feedback.text += "\nTipp 2: Aaach... das Gegenteil von 'out'... 'in'"
 			4:
 				$UI/Feedback.text += "\nTipp 3: Döner gibt es doch meistens am Donnerstag -> also 'do'"	
 			5:
-				$UI/Feedback.text += "\nTipp 5:  Möhr + in + do → zusammensetzen ohne Lücke"	
+				$UI/Feedback.text += "\nTipp 5:  Möhr + in + do -> zusammensetzen ohne Lücke"	
 		
