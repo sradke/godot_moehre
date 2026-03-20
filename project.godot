@@ -17,3 +17,7 @@ config/features=PackedStringArray("4.3")
 [autoload]
 
 GameState="*res://autoload/GameState.gd"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
