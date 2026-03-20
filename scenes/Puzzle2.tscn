@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://y5h4oq2f1e3"]
+
+[ext_resource type="Script" path="res://scripts/Puzzle2.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d3f5fo3rtgsix" path="res://assets/stinkerbell.png" id="2_juo76"]
+
+[node name="Puzzle2" type="Node2D"]
+script = ExtResource("1")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Text" type="RichTextLabel" parent="UI"]
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 750.0
+offset_bottom = 220.0
+bbcode_enabled = true
+text = "Rätsel 2:
+In diesem Rätsel braucht du nur etwas Kontren... Kompensa... ähm. Kontrast... ach oder noch eine Fanta um euch besser zu konzentrieren. Also einfach den Lösungszahlen den Buchstaben zuordnen und ihr habt den Zauberspruch zusammen um die Möhre zu retten.
+
+Zahlenfolge: 8 1 19 9 21 13"
+
+[node name="LineEdit" type="LineEdit" parent="UI"]
+offset_left = 30.0
+offset_top = 230.0
+offset_right = 390.0
+offset_bottom = 266.0
+placeholder_text = "Antwort hier eingeben"
+
+[node name="SubmitButton" type="Button" parent="UI"]
+offset_left = 400.0
+offset_top = 230.0
+offset_right = 520.0
+offset_bottom = 266.0
+text = "Prüfen"
+
+[node name="Feedback" type="Label" parent="UI"]
+offset_left = 30.0
+offset_top = 270.0
+offset_right = 630.0
+offset_bottom = 298.0
+
+[node name="Stinkerbell" type="Sprite2D" parent="."]
+position = Vector2(739, 386)
+texture = ExtResource("2_juo76")

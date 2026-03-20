@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://j0tlr2euiwdy"]
+
+[ext_resource type="Script" path="res://scripts/Puzzle1.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bfs2qdwn0bu6r" path="res://assets/carrot_better.png" id="2_xqc7k"]
+
+[node name="Puzzle1" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Carrot" type="Sprite2D" parent="."]
+position = Vector2(981, 376)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_xqc7k")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Text" type="RichTextLabel" parent="UI"]
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 843.0
+offset_bottom = 220.0
+bbcode_enabled = true
+text = "Rätsel 1:
+A) Denke an eine orangefarbene Wurzel, die Hasen lieben und nimm die ersten vier Buchstaben.
+B) Ich bin total modern! Also nicht out, sondern?
+C) An welchem Wochentag sollte es Döner geben? Nimm die ersten zwei Buchstaben."
+
+[node name="LineEdit" type="LineEdit" parent="UI"]
+offset_left = 30.0
+offset_top = 230.0
+offset_right = 390.0
+offset_bottom = 266.0
+placeholder_text = "Antwort hier eingeben"
+
+[node name="SubmitButton" type="Button" parent="UI"]
+offset_left = 400.0
+offset_top = 230.0
+offset_right = 520.0
+offset_bottom = 266.0
+text = "Prüfen"
+
+[node name="Feedback" type="Label" parent="UI"]
+offset_left = 30.0
+offset_top = 270.0
+offset_right = 630.0
+offset_bottom = 298.0

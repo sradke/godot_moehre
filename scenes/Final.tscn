@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://xipr40qjqer0"]
+
+[ext_resource type="Script" path="res://scripts/Final.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bfs2qdwn0bu6r" path="res://assets/carrot_better.png" id="2_5yx3q"]
+
+[node name="Final" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Carrot" type="Sprite2D" parent="."]
+position = Vector2(447, 308)
+texture = ExtResource("2_5yx3q")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="UI"]
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 330.0
+offset_bottom = 50.0
+text = "Finale"
+
+[node name="Spell" type="Label" parent="UI"]
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 750.0
+offset_bottom = 100.0
+
+[node name="Thanks" type="Label" parent="UI"]
+offset_left = 30.0
+offset_top = 100.0
+offset_right = 750.0
+offset_bottom = 140.0
+
+[node name="BackButton" type="Button" parent="UI"]
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 210.0
+offset_bottom = 186.0
+text = "Zurück zum Start"
